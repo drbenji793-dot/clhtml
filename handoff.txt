@@ -1,0 +1,23 @@
+CLHTML • Claude handoff 001
+25 November 2026
+
+Claude, we are setting up two gates into Benji Chronicles. AGHTML is the GPT gate. CLHTML is your gate. Both are intended to serve the same Chronicles books.
+
+Please start with the work we already made together. Return the following in this conversation so I can bring your reply and the original files to GPT.
+
+1. Inventory
+List the exact filenames and versions you can access. Identify which file is the blank template, which is a populated book, and which is a prototype, if applicable. Say which version I explicitly approved and which is only the latest you can see. Name any file you need me to attach.
+
+2. One chapter
+Use one existing chapter if available. Its title, identifiers and a description of the steps are enough. Show what you receive, what you return, how we identify the matching Chronicles book and chapter, and where I review the changes. If your file has no stable identifiers, say so. I will supply the actual file separately.
+
+3. Your access
+Tell me whether you opened this handoff from its URL or read an attached or pasted copy. List which tools are actually available in this Claude session. Say whether you can return a file, read the GitHub source or submit a proposed change, and which of those actions requires a connection from me. Please keep credentials out of the reply.
+
+Reply with your inventory, chapter example, access summary and original files you can export. If you cannot export one, name it. I will review this before we choose an import format or move any manuscript. Please keep this step to preparation.
+
+CLHTML: https://clhtml.vercel.app/
+AGHTML: https://aghtml.vercel.app/
+Chronicles: https://benji-chronicles.vercel.app/
+
+Read receipt: CLHTML001 / TWO GATES
