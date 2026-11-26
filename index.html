@@ -11,7 +11,59 @@ header{text-align:center;padding:22px 0 18px}h1,h2,p{margin:0}h1{font:normal cla
 .frame{border-radius:14px;overflow:hidden;border:1px solid #ab9277;background:#efdfc9}.frame img{display:block;width:100%;height:clamp(220px,42vw,405px);object-fit:cover;object-position:50% 54%}
 .gates{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#bca386}.gate{display:flex;align-items:center;justify-content:space-between;text-decoration:none;padding:13px clamp(12px,3vw,26px);background:#f3e5d1;line-height:1.3}.gate b{font:600 clamp(1.15rem,3vw,1.55rem) Georgia,serif}.gate small{display:block;font-size:.8rem;margin-top:3px}.gpt{color:#294239}.claude{background:#e8d2b7;color:#59391e}.gate i{font-size:1.15rem;font-style:normal}.gate:hover{filter:brightness(1.035)}
 details{background:#f5eadd;border:1px solid #b49b80;border-radius:10px;padding:14px 17px;margin:14px 0}summary{cursor:pointer;font:600 1.12rem Georgia,serif}details p{font-size:.91rem;margin:11px 0}.actions{display:flex;gap:7px;flex-wrap:wrap}.actions a,button{border:1px solid #a1876d;padding:9px 13px;border-radius:8px;color:inherit;background:#eadbc8;font:600 .83rem/1.4 Arial,sans-serif;text-decoration:none;cursor:pointer}.actions a:first-child{background:#533b29;color:white}.actions [hidden],#status:empty{display:none}footer{color:#574637;margin-top:15px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #74502b;outline-offset:-3px}@media(max-width:420px){main{width:calc(100% - 20px);padding-top:12px}header{padding:16px 0}.gate{padding:12px}}
-</style><style id="uni-002">.uni-footer{display:block;direction:ltr;text-align:left;margin-top:18px}.uni-top{display:flex;align-items:center;justify-content:flex-start;width:44px;height:44px;background:transparent;border:0;padding:0;color:#527057;box-shadow:none;cursor:pointer}.uni-line{height:2px;margin:3px 0 0;background:linear-gradient(to bottom,rgba(93,75,53,.28) 0 50%,rgba(255,249,235,.8) 50% 100%)}.uni-footer .uni-rec{width:100%;margin:0;padding:0;background:transparent;border:0;box-shadow:none}.uni-rec>summary{display:flex;align-items:center;justify-content:flex-start;list-style:none;min-height:44px;width:max-content;padding:0;cursor:pointer}.uni-rec>summary::-webkit-details-marker,.uni-rec>summary::before{display:none;content:none}.uni-chip{box-sizing:border-box;display:inline-flex;align-items:center;gap:4px;width:73px;height:14px;border:.5px solid rgba(130,122,109,.25);border-radius:3px;background:rgba(130,130,130,.16);color:#58564f;font:400 8px/1 system-ui,sans-serif;padding:0 5px}.uni-chip::before{content:'▸';color:#527057;font-size:8px}.uni-rec[open] .uni-chip::before{content:'▾'}.uni-body{padding:6px 0 12px;font:12px/1.5 system-ui,sans-serif;display:flex;flex-direction:column;gap:5px;overflow-wrap:anywhere}</style></head>
+</style><style id="uni-002">.uni-footer{display:block;direction:ltr;text-align:left;margin-top:18px}.uni-top{display:flex;align-items:center;justify-content:flex-start;width:44px;height:44px;background:transparent;border:0;padding:0;color:#527057;box-shadow:none;cursor:pointer}.uni-line{height:2px;margin:3px 0 0;background:linear-gradient(to bottom,rgba(93,75,53,.28) 0 50%,rgba(255,249,235,.8) 50% 100%)}.uni-footer .uni-rec{width:100%;margin:0;padding:0;background:transparent;border:0;box-shadow:none}.uni-rec>summary{display:flex;align-items:center;justify-content:flex-start;list-style:none;min-height:44px;width:max-content;padding:0;cursor:pointer}.uni-rec>summary::-webkit-details-marker,.uni-rec>summary::before{display:none;content:none}.uni-chip{box-sizing:border-box;display:inline-flex;align-items:center;gap:4px;width:73px;height:14px;border:.5px solid rgba(130,122,109,.25);border-radius:3px;background:rgba(130,130,130,.16);color:#58564f;font:400 8px/1 system-ui,sans-serif;padding:0 5px}.uni-chip::before{content:'▸';color:#527057;font-size:8px}.uni-rec[open] .uni-chip::before{content:'▾'}.uni-body{padding:6px 0 12px;font:12px/1.5 system-ui,sans-serif;display:flex;flex-direction:column;gap:5px;overflow-wrap:anywhere}</style><style id="uni005-compact">
+/* UNI005. The disclosure owns the tap area. Its label owns the visible chip. */
+:is(#site-rec,[data-uni-footer])[data-uni-footer],
+:is(#site-rec,[data-uni-footer])[data-uni-footer] details {
+  box-sizing:border-box!important; width:100%!important; max-width:100%!important;
+  margin:0!important; padding:0!important; border:0!important; border-radius:0!important;
+  background:transparent!important; box-shadow:none!important; text-align:left!important;
+  direction:ltr; color:#58564f; font:400 8px/12px system-ui,sans-serif!important;
+}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] :is(div,p,span,a,button,small,h3,dl,dt,dd,label,summary) {
+  font:400 8px/12px system-ui,sans-serif!important;
+  letter-spacing:normal!important; text-transform:none!important;
+}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] :is(.uni-body,.rec-body,.techbody,.tech-inner,.chapter-detail-group,.website-details,.technical-section,.uni005-release) {
+  background:transparent!important; border:0!important; box-shadow:none!important;
+  padding:0!important; margin:0!important; text-align:left!important; display:block;
+}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] summary {
+  display:flex!important; align-items:flex-end!important; justify-content:flex-start!important;
+  width:max-content!important; max-width:100%!important; min-width:44px!important; height:44px!important; min-height:44px!important;
+  margin:0!important; padding:0!important; list-style:none!important; box-sizing:border-box!important;
+  background:transparent!important; border:0!important; border-radius:0!important; box-shadow:none!important;
+  transform:none!important; cursor:pointer; direction:ltr;
+}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] summary::-webkit-details-marker {display:none}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] summary::before,
+:is(#site-rec,[data-uni-footer])[data-uni-footer] summary::after {content:none!important;display:none!important}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] summary > span {
+  display:inline-flex!important; align-items:center!important; justify-content:flex-start!important; flex:none!important;
+  box-sizing:border-box!important; width:max-content!important; min-width:0!important; height:14px!important; min-height:14px!important;
+  gap:4px!important; margin:0!important; padding:0 5px!important;
+  border:.5px solid rgba(130,122,109,.25)!important; border-radius:3px!important;
+  background:rgba(130,130,130,.16)!important; color:#58564f!important; box-shadow:none!important;
+  font:400 8px/1 system-ui,sans-serif!important; white-space:nowrap!important; overflow-wrap:normal!important;
+  transform:none!important; rotate:none!important; position:static!important;
+}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] > summary > span {width:73px!important}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] summary > span::before {
+  display:inline!important; content:"▸"!important; font:400 8px/1 system-ui,sans-serif!important;
+  color:#527057!important; transform:none!important; border:0!important;
+}
+:is(#site-rec,[data-uni-footer])[data-uni-footer][open] > summary > span::before,
+:is(#site-rec,[data-uni-footer])[data-uni-footer] details[open] > summary > span::before {content:"▾"!important}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] summary:focus-visible > span {outline:2px solid #527057;outline-offset:1px}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] :is(.uni005-release,p) {margin:0!important;padding:0!important}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] .uni005-release {display:grid!important;gap:2px!important;padding-top:4px!important}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] [data-connections] {display:flex!important;gap:2px 8px!important;flex-wrap:wrap}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] [data-service] {display:inline-flex;align-items:center;gap:3px;white-space:nowrap}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] [data-service] i {display:inline-block;width:6px!important;height:6px!important;box-sizing:border-box;margin:0!important;border:1px solid currentColor;border-radius:50%}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] :is(.actions,.actions-line,.row,.chapter-detail-row) {gap:2px 4px!important;padding:0!important}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] button {min-height:14px!important;padding:0 5px!important;margin:0!important}
+:is(#site-rec,[data-uni-footer])[data-uni-footer] details[open] > p:first-of-type {padding-top:4px!important}
+</style></head>
 <body><main>
 <nav aria-label="Site navigation"><strong>CLHTML</strong><a href="https://benji-chronicles.vercel.app/">Open Chronicles ↗</a></nav>
 <header><h1>Chronicles gates</h1><p>Choose your writing workshop.</p></header>
@@ -19,7 +71,7 @@ details{background:#f5eadd;border:1px solid #b49b80;border-radius:10px;padding:1
 <div class="gates"><a class="gate gpt" href="https://aghtml.vercel.app/"><span><b>AGHTML</b><small>From GPT</small></span><i aria-hidden="true">↗</i></a><a class="gate claude" href="#claude"><span><b>CLHTML</b><small>From Claude</small></span><i aria-hidden="true">↓</i></a></div></div>
 <details id="claude" open><summary>Message to Claude</summary><p>Share this brief in your Claude conversation. Bring back the reply and the original book files for review.</p>
 <div class="actions"><a href="/claude.txt">Read brief</a><button id="copy" type="button" hidden>Copy prompt</button><a href="/handoff.txt" download="CLHTML_Claude_Handoff_001.txt">Download brief</a></div><p id="status" role="status"></p></details>
-<footer class="uni-footer"><button class="uni-top" type="button" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})"><svg aria-hidden="true" viewBox="0 0 32 42" width="22" height="29" fill="currentColor"><path d="M2 16 16 0 30 16H21V28H11V16Z"/><rect x="11" y="31" width="10" height="3" rx="1.5"/><rect x="11" y="37" width="10" height="3" rx="1.5"/></svg></button><div class="uni-line" aria-hidden="true"></div><details class="uni-rec"><summary><span class="uni-chip">Technicals</span></summary><div class="uni-body"><div class="uni005-release" dir="ltr"><p>Version CLHTML002.1 · Released 26 November 2026 · 14:12 UTC</p><p data-connections data-origin="https://clhtml.vercel.app" style="display:flex;flex-wrap:wrap;gap:4px 12px"><span role="img" data-service="github" aria-label="GitHub · unverified"><i aria-hidden="true" style="display:inline-block;width:7px;height:7px;border:1px solid currentColor;border-radius:100%;margin-right:4px"></i>GitHub</span><span role="img" data-service="vercel" aria-label="Vercel · unverified"><i aria-hidden="true" style="display:inline-block;width:7px;height:7px;border:1px solid currentColor;border-radius:100%;margin-right:4px"></i>Vercel</span><span role="img" data-service="supabase" aria-label="Supabase · unverified"><i aria-hidden="true" style="display:inline-block;width:7px;height:7px;border:1px solid currentColor;border-radius:100%;margin-right:4px"></i>Supabase</span></p><p><a href="https://clhtml.vercel.app/latest.html" download>Download latest HTML · CLHTML</a></p></div><a href="https://github.com/drbenji793-dot/clhtml">GitHub ↗</a><a href="https://benjizk.vercel.app/zk046.html#hq-design">Universal Site Design</a></div></details></footer>
+<footer class="uni-footer"><button class="uni-top" type="button" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})"><svg aria-hidden="true" viewBox="0 0 32 42" width="22" height="29" fill="currentColor"><path d="M2 16 16 0 30 16H21V28H11V16Z"/><rect x="11" y="31" width="10" height="3" rx="1.5"/><rect x="11" y="37" width="10" height="3" rx="1.5"/></svg></button><div class="uni-line" aria-hidden="true"></div><details data-uni-footer class="uni-rec"><summary><span class="uni-chip">Technicals</span></summary><div class="uni-body"><div class="uni005-release" dir="ltr"><p>Version CLHTML002.2 · Released 26 November 2026 · 14:46 UTC</p><p data-connections data-origin="https://clhtml.vercel.app" style="display:flex;flex-wrap:wrap;gap:4px 12px"><span role="img" data-service="github" aria-label="GitHub · unverified"><i aria-hidden="true" style="display:inline-block;width:7px;height:7px;border:1px solid currentColor;border-radius:100%;margin-right:4px"></i>GitHub</span><span role="img" data-service="vercel" aria-label="Vercel · unverified"><i aria-hidden="true" style="display:inline-block;width:7px;height:7px;border:1px solid currentColor;border-radius:100%;margin-right:4px"></i>Vercel</span><span role="img" data-service="supabase" aria-label="Supabase · unverified"><i aria-hidden="true" style="display:inline-block;width:7px;height:7px;border:1px solid currentColor;border-radius:100%;margin-right:4px"></i>Supabase</span></p><p><a href="https://clhtml.vercel.app/latest.html" download>Download latest HTML · CLHTML</a></p></div><a href="https://github.com/drbenji793-dot/clhtml">GitHub ↗</a><a href="https://benjizk.vercel.app/zk046.html#hq-design">Universal Site Design</a></div></details></footer>
 </main><script>
 const panel=document.getElementById('claude');
 document.querySelector('.claude').addEventListener('click',()=>{panel.open=true;panel.querySelector('summary').focus();});
