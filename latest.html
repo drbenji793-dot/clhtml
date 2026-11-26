@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head><base href="https://clhtml.vercel.app/">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#d9c4ab"><title>CLHTML · Chronicles gates</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#d9c4ab;color:#35291f;font:16px/1.5 "Instrument Sans",Arial,sans-serif}
+main{width:min(880px,calc(100% - 32px));margin:0 auto;padding:20px 0 38px}
+nav,footer{display:flex;justify-content:space-between;align-items:center;font-size:.84rem}nav{border-bottom:1px solid #af9579;padding-bottom:12px}nav strong{font:700 1.45rem Georgia,serif;letter-spacing:.05em}a{color:inherit;text-underline-offset:4px}
+header{text-align:center;padding:22px 0 18px}h1,h2,p{margin:0}h1{font:normal clamp(2.15rem,5vw,3.35rem)/1.12 Georgia,serif}header p{font-size:.94rem;margin-top:6px;color:#594736}
+.frame{border-radius:14px;overflow:hidden;border:1px solid #ab9277;background:#efdfc9}.frame img{display:block;width:100%;height:clamp(220px,42vw,405px);object-fit:cover;object-position:50% 54%}
+.gates{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#bca386}.gate{display:flex;align-items:center;justify-content:space-between;text-decoration:none;padding:13px clamp(12px,3vw,26px);background:#f3e5d1;line-height:1.3}.gate b{font:600 clamp(1.15rem,3vw,1.55rem) Georgia,serif}.gate small{display:block;font-size:.8rem;margin-top:3px}.gpt{color:#294239}.claude{background:#e8d2b7;color:#59391e}.gate i{font-size:1.15rem;font-style:normal}.gate:hover{filter:brightness(1.035)}
+details{background:#f5eadd;border:1px solid #b49b80;border-radius:10px;padding:14px 17px;margin:14px 0}summary{cursor:pointer;font:600 1.12rem Georgia,serif}details p{font-size:.91rem;margin:11px 0}.actions{display:flex;gap:7px;flex-wrap:wrap}.actions a,button{border:1px solid #a1876d;padding:9px 13px;border-radius:8px;color:inherit;background:#eadbc8;font:600 .83rem/1.4 Arial,sans-serif;text-decoration:none;cursor:pointer}.actions a:first-child{background:#533b29;color:white}.actions [hidden],#status:empty{display:none}footer{color:#574637;margin-top:15px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #74502b;outline-offset:-3px}@media(max-width:420px){main{width:calc(100% - 20px);padding-top:12px}header{padding:16px 0}.gate{padding:12px}}
+</style><style id="uni-002">.uni-footer{display:block;direction:ltr;text-align:left;margin-top:18px}.uni-top{display:flex;align-items:center;justify-content:flex-start;width:44px;height:44px;background:transparent;border:0;padding:0;color:#527057;box-shadow:none;cursor:pointer}.uni-line{height:2px;margin:3px 0 0;background:linear-gradient(to bottom,rgba(93,75,53,.28) 0 50%,rgba(255,249,235,.8) 50% 100%)}.uni-footer .uni-rec{width:100%;margin:0;padding:0;background:transparent;border:0;box-shadow:none}.uni-rec>summary{display:flex;align-items:center;justify-content:flex-start;list-style:none;min-height:44px;width:max-content;padding:0;cursor:pointer}.uni-rec>summary::-webkit-details-marker,.uni-rec>summary::before{display:none;content:none}.uni-chip{box-sizing:border-box;display:inline-flex;align-items:center;gap:4px;width:73px;height:14px;border:.5px solid rgba(130,122,109,.25);border-radius:3px;background:rgba(130,130,130,.16);color:#58564f;font:400 8px/1 system-ui,sans-serif;padding:0 5px}.uni-chip::before{content:'▸';color:#527057;font-size:8px}.uni-rec[open] .uni-chip::before{content:'▾'}.uni-body{padding:6px 0 12px;font:12px/1.5 system-ui,sans-serif;display:flex;flex-direction:column;gap:5px;overflow-wrap:anywhere}</style></head>
+<body><main>
+<nav aria-label="Site navigation"><strong>CLHTML</strong><a href="https://benji-chronicles.vercel.app/">Open Chronicles ↗</a></nav>
+<header><h1>Chronicles gates</h1><p>Choose your writing workshop.</p></header>
+<div class="frame"><img src="/assets/library.webp" width="1440" height="960" alt="A stone bridge leads to green and walnut doors opening into the same library.">
+<div class="gates"><a class="gate gpt" href="https://aghtml.vercel.app/"><span><b>AGHTML</b><small>From GPT</small></span><i aria-hidden="true">↗</i></a><a class="gate claude" href="#claude"><span><b>CLHTML</b><small>From Claude</small></span><i aria-hidden="true">↓</i></a></div></div>
+<details id="claude" open><summary>Message to Claude</summary><p>Share this brief in your Claude conversation. Bring back the reply and the original book files for review.</p>
+<div class="actions"><a href="/claude.txt">Read brief</a><button id="copy" type="button" hidden>Copy prompt</button><a href="/handoff.txt" download="CLHTML_Claude_Handoff_001.txt">Download brief</a></div><p id="status" role="status"></p></details>
+<footer class="uni-footer"><button class="uni-top" type="button" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})"><svg aria-hidden="true" viewBox="0 0 32 42" width="22" height="29" fill="currentColor"><path d="M2 16 16 0 30 16H21V28H11V16Z"/><rect x="11" y="31" width="10" height="3" rx="1.5"/><rect x="11" y="37" width="10" height="3" rx="1.5"/></svg></button><div class="uni-line" aria-hidden="true"></div><details class="uni-rec"><summary><span class="uni-chip">Technicals</span></summary><div class="uni-body"><div class="uni005-release" dir="ltr"><p>Version CLHTML002.1 · Released 26 November 2026 · 14:12 UTC</p><p data-connections data-origin="https://clhtml.vercel.app" style="display:flex;flex-wrap:wrap;gap:4px 12px"><span role="img" data-service="github" aria-label="GitHub · unverified"><i aria-hidden="true" style="display:inline-block;width:7px;height:7px;border:1px solid currentColor;border-radius:100%;margin-right:4px"></i>GitHub</span><span role="img" data-service="vercel" aria-label="Vercel · unverified"><i aria-hidden="true" style="display:inline-block;width:7px;height:7px;border:1px solid currentColor;border-radius:100%;margin-right:4px"></i>Vercel</span><span role="img" data-service="supabase" aria-label="Supabase · unverified"><i aria-hidden="true" style="display:inline-block;width:7px;height:7px;border:1px solid currentColor;border-radius:100%;margin-right:4px"></i>Supabase</span></p><p><a href="https://clhtml.vercel.app/latest.html" download>Download latest HTML · CLHTML</a></p></div><a href="https://github.com/drbenji793-dot/clhtml">GitHub ↗</a><a href="https://benjizk.vercel.app/zk046.html#hq-design">Universal Site Design</a></div></details></footer>
+</main><script>
+const panel=document.getElementById('claude');
+document.querySelector('.claude').addEventListener('click',()=>{panel.open=true;panel.querySelector('summary').focus();});
+const copy=document.getElementById('copy');
+if(navigator.clipboard)copy.hidden=false;
+copy.onclick=async()=>{try{await navigator.clipboard.writeText('Claude, open https://clhtml.vercel.app/claude.txt and follow the handoff. Return your inventory, one chapter example, your actual access, and the read receipt.');document.getElementById('status').textContent='Copied. Paste the prompt into Claude.';}catch{document.getElementById('status').textContent='Open Read brief to copy the text, or attach the downloaded brief.';}};
+</script><script>
+(() => {
+  function mount() {
+    if (document.getElementById('uni003-top')) return;
+    const arrow = document.createElement('button');
+    arrow.id = 'uni003-top';
+    arrow.type = 'button';
+    arrow.hidden = true;
+    arrow.setAttribute('aria-label', 'Back to top');
+    arrow.innerHTML = '<svg aria-hidden="true" viewBox="0 0 32 42" width="22" height="29" fill="currentColor"><path d="M2 16 16 0 30 16H21V28H11V16Z"/><rect x="11" y="31" width="10" height="3" rx="1.5"/><rect x="11" y="37" width="10" height="3" rx="1.5"/></svg>';
+    const style = document.createElement('style');
+    style.textContent = `
+      #uni003-top { position:fixed!important; inset:auto auto calc(16px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left))!important; z-index:100; box-sizing:border-box; width:44px; height:44px; display:grid; place-items:center; padding:0; margin:0; border:0; background:transparent; box-shadow:none; color:#527057; cursor:pointer }
+      #uni003-top[hidden],button.uni-top,#benji-green-up,#go-top.up,#benji-up,#z-back-top,button.back-to-top,button#back-to-top,button[aria-label="Back to top"]:not(#uni003-top) { display:none!important }
+    `;
+    document.head.append(style);
+    document.body.append(arrow);
+    let scroller = window;
+    function update() {
+      if (scroller !== window && (!scroller.isConnected || !scroller.getClientRects().length)) scroller = window;
+      if (scroller !== window && scroller.scrollTop <= 1 && window.scrollY > 1) scroller = window;
+      arrow.hidden = (scroller === window ? window.scrollY : scroller.scrollTop) <= 1;
+    }
+    document.addEventListener('scroll', event => {
+      const target = event.target;
+      if (target === document) scroller = window;
+      else if (target instanceof HTMLElement && target.clientHeight >= Math.min(240,innerHeight/2)
+          && target.scrollHeight > target.clientHeight && !target.matches('textarea,input,select')) scroller = target;
+      update();
+    }, {capture:true, passive:true});
+    arrow.addEventListener('click', () => scroller.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'}));
+    for (const name of ['pageshow','resize','hashchange','popstate']) window.addEventListener(name, update);
+    new MutationObserver(update).observe(document.body,{childList:true,subtree:true});
+    update();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount, {once:true});
+  else mount();
+})();
+</script>
+<script>(() => {
+  const services = ['github', 'vercel', 'supabase'];
+  const labels = {connected:'verified',failed:'connection failed',unknown:'unverified'};
+  const colors = {connected:'#397448',failed:'#b24039',unknown:'transparent'};
+  async function check(row) {
+    function paint(states) {
+      for (const name of services) {
+        const label = row.querySelector('[data-service="'+name+'"]');
+        const state = Object.hasOwn(labels,states[name]) ? states[name] : 'unknown';
+        label.firstElementChild.style.backgroundColor = colors[state];
+        label.title = label.textContent.trim() + ' · ' + labels[state];
+        label.setAttribute('aria-label', label.title);
+      }
+    }
+    paint({});
+    try {
+      const url = new URL('/api/uni005', location.protocol === 'file:' ? row.dataset.origin : location.origin);
+      const response = await fetch(url, {cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(8000)});
+      if (response.ok) paint(await response.json());
+    } catch { /* A saved copy can be opened offline. */ }
+  }
+  document.addEventListener('toggle', e => {
+    if (e.target.tagName === 'DETAILS' && e.target.open) {
+      const row = e.target.querySelector('[data-connections]');
+      if (row && row.closest('details') === e.target) check(row);
+    }
+  }, true);
+})();
+</script></body></html>
